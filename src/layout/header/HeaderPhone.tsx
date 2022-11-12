@@ -1,13 +1,17 @@
 import { BsTelephoneOutboundFill } from 'react-icons/bs';
 
-const HeaderPhone = () => {
-  return (
-    <div className="app-headerPhone py-2 pr-5 d-flex">
-      <strong className="ml-auto">
-      <BsTelephoneOutboundFill className='mr-1' /> +4178 896 32 54
-      </strong>
-    </div>
-  );
+const VARIABLES = {
+  phoneNumber: '+4178 896 32 54'
 };
+
+const HeaderPhone = () => (
+  <div className='app-headerPhone'>
+    <div className='container py-2 d-flex'>
+      <small className='ml-auto' onClick={() => window.open(`tel:${VARIABLES.phoneNumber}`, '_self')}>
+        <BsTelephoneOutboundFill className='mr-1' /> {VARIABLES.phoneNumber}
+      </small>
+    </div>
+  </div>
+);
 
 export default HeaderPhone;
