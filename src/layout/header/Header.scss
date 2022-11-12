@@ -1,14 +1,12 @@
-@import 'assets/scss/variables.scss';
+@import "assets/scss/variables.scss";
 
-.app-header{
-
-  .app-headerPhone{
+.app-header {
+  .app-headerPhone {
     background-color: $color-orange;
     color: whitesmoke;
     cursor: pointer;
   }
-  .app-headerNavbar{
-    
+  .app-headerNavbar {
+    background-color: #212529;
   }
 }
-
