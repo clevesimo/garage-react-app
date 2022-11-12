@@ -1,10 +1,8 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'app';
 import reportWebVitals from './reportWebVitals';
-import 'assets/fonts/titilliumWeb/TitilliumWeb-Regular.ttf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/scss/index.scss';
+import App from 'app';
 
 ReactDOM.render(
   <App />,
