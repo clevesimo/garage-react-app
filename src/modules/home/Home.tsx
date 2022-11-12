@@ -1,9 +1,7 @@
-import { memo, useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './Home.scss';
 
-const Home = (props: any) => {
-
-  const [stateValue, setStateValue] = useState<number>(0);
+const Home = () => {
 
   useEffect(
     () => {
