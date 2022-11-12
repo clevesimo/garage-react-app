@@ -8,7 +8,11 @@
     cursor: pointer;
   }
   .app-headerNavbar{
-    
+    background-color: #212529;
+    .navbar-logo{
+      max-width:170px;
+      max-height:120px
+    }
   }
 }
 
