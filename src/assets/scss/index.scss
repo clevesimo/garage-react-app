@@ -5,3 +5,12 @@ body {
   font-size: 1rem;
   font-family: "TitilliumWeb-Regular";
 }
+
+small,
+.small {
+  font-size: 0.8em;
+}
+
+.bg-orange {
+  background-color: $color-orange !important;
+}

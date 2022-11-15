@@ -1,26 +1,22 @@
 import { useTranslation } from 'react-i18next';
 import { useSetTitleDocument } from 'hooks';
-import './NotFound.scss';
+import './Privacy.scss';
 
-const NotFound = () => {
+const Privacy = () => {
 
   /** hoot that apply translation */
   const { t } = useTranslation();
   /** Update title of document */
-  useSetTitleDocument(t('notFound.title'));
+  useSetTitleDocument(t('privacy.title'));
 
   return (
     <div className='container my-5'>
-      <div className='app-notFound'>
-        <h1>
-          {t('notFound.title')}
-        </h1>
-        <p>
-          {t('notFound.description')}
-        </p>
+      <div className='app-privacy'>
+        {t('privacy.title')}
       </div>
     </div>
   );
+
 };
 
-export default NotFound;
+export default Privacy;
