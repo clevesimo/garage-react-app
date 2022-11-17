@@ -3,7 +3,7 @@ import { memo } from 'react';
 
 const HomeSection3 = () => (
   <div
-    className='mb-5'
+    className='mt-5'
     style={{
       height: '60vh',
       backgroundImage: `url(${imgJpg3})`,

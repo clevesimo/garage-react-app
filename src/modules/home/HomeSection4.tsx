@@ -7,17 +7,11 @@ const HomeSection4 = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <h1 className='text-orange'>
-        {t(`Un réseau solide et local`)}
+        {t('home.section4.title')}
       </h1>
-      <p>
-        <ul>
-          Grâce à plus de 20 ans d'expérience, nous avons développé un réseau solide :
-          <li>Des partenaires locaux pour le traitement des déchets véhicules.</li>
-          <li>Des partenaires nationaux et internationaux afin de vous proposer à la vente un choix de véhicules juste et adaptés à vos besoins.</li>
-        </ul>
-      </p>
+      <p dangerouslySetInnerHTML={{ __html: t(`home.section4.description`) }} />
     </div>
   );
 

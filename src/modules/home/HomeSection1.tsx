@@ -7,15 +7,11 @@ const HomeSection1 = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='container mb-5'>
+    <div className='container'>
       <h1 className='text-orange'>
-        {t(`L'expérience et la qualité`)}
+        {t('home.section1.title')}
       </h1>
-      <p>
-        {t(`Toute l'équipe du garage Auto Mondial à Aigle vous souhaite la bienvenue. 
-        Notre garage vous accompagne sur toute la durée de vie d'un véhicule :  De la vente à la réparation mécanique jusqu'au transport de véhicule hors d'usage. 
-        Nous nous déplaçons sur tout le territoire Suisse pour du dépannage ou pour trouver votre véhicule idéal.`)}
-      </p>
+      <p dangerouslySetInnerHTML={{ __html: t(`home.section1.description`) }} />
     </div>
   );
 

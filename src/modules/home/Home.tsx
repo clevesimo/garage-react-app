@@ -14,7 +14,7 @@ const Home = () => {
   useSetTitleDocument(t(''));
 
   return (
-    <div className='app-home my-5 py-5'>
+    <div className='app-home my-5'>
       <HomeSection1 />
       <HomeSection2 />
       <HomeSection3 />

@@ -49,6 +49,7 @@ const useModule = () => {
       // Update state
       setState(l => ({ ...l, title, description }));
     },
+    // eslint-disable-next-line
     [pathname]
   );
 

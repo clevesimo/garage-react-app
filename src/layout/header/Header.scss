@@ -14,16 +14,21 @@
     }
 
     a:hover {
-      text-decoration: none;
+      text-decoration: none !important;
+      font-weight: bolder !important;
     }
-    
+
+    small:hover {
+      text-decoration: none !important;
+      font-weight: bolder !important;
+    }
   }
   .app-headerModules {
     background-color: #212529;
 
     a.active {
       background-color: $color-orange;
-      border-radius: 0.25rem!important;
+      border-radius: 0.25rem !important;
       font-weight: bolder;
     }
   }

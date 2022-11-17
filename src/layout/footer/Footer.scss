@@ -2,8 +2,8 @@
 
 .app-footer {
   background-color: $color-orange;
-  padding: 5rem 0 5rem 0;
   color: white;
+  font-size: 0.95rem !important;
 
   a {
     color: white;
@@ -11,5 +11,10 @@
 
   a:hover {
     text-decoration: none;
+    font-weight: bolder;
+  }
+
+  h6: {
+    font-size: 1rem !important;
   }
 }

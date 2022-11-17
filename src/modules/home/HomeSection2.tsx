@@ -13,7 +13,7 @@ interface IProps {
 const HomeSection2Item = ({ description, img, title }: IProps) => (
   <div className='col-12 col-md-4 d-flex flex-column'>
     <div className='d-flex justify-content-center mb-4 mt-4 mt-md-0'>
-      <img src={img} />
+      <img src={img} alt='' />
     </div>
     <h3 className='text-orange text-center'>
       {title}
@@ -30,20 +30,20 @@ const HomeSection2 = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='container mb-5'>
+    <div className='container mt-5'>
       <div className='row'>
         <HomeSection2Item
           img={imgPng2}
-          title={t(`RÉCUPÉRATION D'ÉPAVES`)}
-          description={t(`Votre véhicule a été accidenté ? Vous ne pouvez plus le déplacer ? Nous prenons en charge le déplacement et/ou le recyclage du véhicule.`)} />
+          title={t('home.section2.0.title')}
+          description={t('home.section2.0.description')} />
         <HomeSection2Item
           img={imgPng3}
-          title={t(`ACHAT ET VENTE`)}
-          description={t(`Vous avez envie de changer de voiture ? Expliquez-nous vos envies, nous nous chargeons de la recherche et des formalités.`)} />
+          title={t('home.section2.1.title')}
+          description={t('home.section2.1.description')} />
         <HomeSection2Item
           img={imgPng4}
-          title={t(`RÉPARATION MÉCANIQUE`)}
-          description={t(`Votre moteur fait du bruit ? Un choc a endommagé la carrosserie ? Confiez-nous votre véhicule, nos mécaniciens s'en occuperont.`)} />
+          title={t('home.section2.2.title')}
+          description={t('home.section2.2.description')} />
       </div>
     </div>
   );

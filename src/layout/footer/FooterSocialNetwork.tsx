@@ -12,16 +12,18 @@ const FooterSocialNetwork = () => {
       <h6 className='mb-3 text-uppercase'>
         {t('footer.socialNetwork.title')}
       </h6>
-      <a 
+      <a
         className='mr-2'
-        href={ENVIRONMENT_VARIABLES.facebookPage} 
-        title={ENVIRONMENT_VARIABLES.facebookPage} 
+        href={ENVIRONMENT_VARIABLES.facebookPage}
+        title={ENVIRONMENT_VARIABLES.facebookPage}
+        rel='noreferrer'
         target={'_blank'}>
         <FaFacebook size={27} />
       </a>
-      <a 
-        href={ENVIRONMENT_VARIABLES.instagramPage} 
-        title={ENVIRONMENT_VARIABLES.instagramPage} 
+      <a
+        href={ENVIRONMENT_VARIABLES.instagramPage}
+        title={ENVIRONMENT_VARIABLES.instagramPage}
+        rel='noreferrer'
         target={'_blank'}>
         <FaInstagram size={30} />
       </a>
