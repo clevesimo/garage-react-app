@@ -1,2 +1,11 @@
 .app-contact {
+  .mapContent {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .mapContent > div {
+    position: relative !important;
+    height: inherit !important;
+  }
 }

@@ -4,6 +4,7 @@ import packageJson from '../../package.json';
 const ENVIRONMENT_VARIABLES = {
   environmentName: process.env.REACT_APP_ENVIRONMENT_NAME as 'DEV' | 'PROD',
   instagramPage: process.env.REACT_APP_INSTAGRAM_PAGE as string,
+  googleApiKey: process.env.REACT_APP_GOOGLE_API_KEY as string,
   facebookPage: process.env.REACT_APP_FACEBOOK_PAGE as string,
   appName: process.env.REACT_APP_APPLICATION_NAME as string,
   baseUrlServer: process.env.REACT_APP_SERVER as string,
@@ -15,7 +16,11 @@ const ENVIRONMENT_VARIABLES = {
   },
   address: {
     postalCodeCity: process.env.REACT_APP_CONTACT_ADDRESS_POSTAL_CODE_CITY as string,
-    street: process.env.REACT_APP_CONTACT_ADDRESS_STREET as string
+    street: process.env.REACT_APP_CONTACT_ADDRESS_STREET as string,
+    location: {
+      lat: parseFloat(process.env.REACT_APP_CONTACT_ADDRESS_STREET_LOCATION_LATITUDE as string),
+      lng: parseFloat(process.env.REACT_APP_CONTACT_ADDRESS_STREET_LOCATION_LONGITUDE as string)
+    }
   }
 };
 
