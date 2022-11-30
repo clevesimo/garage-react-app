@@ -42,8 +42,14 @@
     "hours": "Horaires",
     "from": "Du lundi au vendredi",
     "to": "Les samedi",
-    "title": "Nous contacter",
-    "description": "to do..."
+    "title": "Contact",
+    "description": "Nous sommes à votre écoute",
+    "section1": {
+      "title": "Nous contacter",
+      "description": "Nous sommes disponibles toute l'année (hors jours fériés)"
+    },
+    "address": "Adresse",
+    "phone": "Telephone"
   },
   "services": {
     "title": "Nos services",
